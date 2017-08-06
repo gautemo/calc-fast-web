@@ -1,0 +1,32 @@
+@media only screen and (min-width: 768px) {
+    .header-changed{
+        animation-duration: 1s;
+        animation-name: header-change;
+        animation-fill-mode: forwards;
+    }
+
+    .header-original{
+        animation-duration: 1s;
+        animation-name: header-change-back;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes header-change {
+        to {background-color: #25501a;}
+    }
+
+    @keyframes header-change-back {
+        from{background-color: #25501a;}
+        to {background-color: transparent;}
+    }
+}
+
+.pulse{
+    animation: pulse 10s infinite;
+}
+
+@keyframes pulse{
+    0%{transform: scale(1.0)}
+    50%{transform: scale(1.2)}
+    100%{transform: scale(1.0)}
+}

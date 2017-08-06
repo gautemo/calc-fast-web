@@ -1,0 +1,333 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('resources/playtime.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+body{
+    margin: 0;
+}
+
+#top-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 99;
+}
+
+.header-wrap{
+    padding: 10px 0 10px 20px;
+}
+
+.app-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.header-text{
+    font-size: 30px;
+    font-family: 'MyWebFont';
+    color: yellow;
+    margin: 0 0 0 10px;
+}
+
+.flex{
+    display: flex;
+}
+
+.center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+#test{
+    height: 110vh;
+    width: 100%;
+}
+
+#menu-links{
+    padding-right: 20px;
+}
+
+#menu-links li{
+    margin: 0 10px 0 10px;
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'MyWebFont';
+    color: yellow;   
+    cursor: pointer;  
+}
+
+#menu-links li.active{
+    text-decoration: underline;
+}
+
+.my-link-style{
+    text-decoration: none;
+}
+
+#display-game{
+    height: 85vh;
+    transform: rotate(1deg);
+}
+
+.display-game-phone{
+    height: 75vh;
+}
+
+.flex-col-2{
+    flex: 2;
+}
+
+.flex-col-1{
+    flex: 1;
+}
+
+#download-text{
+    font-size: 60px;
+    font-family: 'MyWebFont';
+    color: yellow;        
+}
+
+.download-badge{
+    width: 300px;
+}
+
+.wrap{
+    text-align: center;
+}
+
+#more{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.my-font{
+    font-family: 'MyWebFont';
+    color: yellow;     
+    margin: 0;  
+    font-size: 17px;
+}
+
+.my-font-black{
+    font-family: 'MyWebFont';
+    color: black; 
+    margin: 0;    
+    font-size: 17px;
+}
+
+.green-gradient{
+  background: green; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, green, #497959); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, green, #497959); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, green, #497959); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, green, #497959); /* Standard syntax */    
+}
+
+#game{
+    background-color: #0bbf4b;/*#4bbfc3;*//*#0b5f9f;*/ /*242c40*/
+    padding: 10px 0 10px 0; 
+    display: flex;
+}
+
+#game-learn{
+    background-color: #3eeb96;/*#7baabe;*//*palevioletred;*/ /*plum*/
+    padding: 10px 0 10px 0; 
+    display: flex;
+}
+
+#game-improve{
+    background-color: #acf35a;/*orange;*/
+    padding: 10px 0 10px 0; 
+    display: flex;
+}
+
+#download{
+    background-color: whitesmoke;
+    padding: 10px 0 10px 0; 
+    display: flex;    
+}
+
+#contact{
+    background-color: #29b21c;
+    padding: 30px 0 30px 50px;
+    display: flex;
+}
+
+.explain-text{
+    font-family: 'MyWebFont';
+    color: yellow;     
+    margin: 0;  
+    font-size: 30px;
+}
+
+.text-white{
+    color: whitesmoke;     
+}
+
+.text-black{
+    color: black;     
+}
+
+li.explain-text{
+    text-align: left;
+    margin-left: 50px;
+}
+
+.link-text{
+    font-family: 'MyWebFont';
+    font-size: 20px;
+}
+
+.social-image{
+    width: 35px;
+    height: 35px;
+}
+
+.social-circle{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.contact-text{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-social{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;    
+}
+
+.img-txt{
+    margin-top: -5vh;
+    font-family: 'MyWebFont';
+    color: black;  
+    font-size: 18px;
+}
+
+#burger{
+    display: none;
+    color: yellow;
+    font-size: 35px;
+}
+
+#home-content-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #top-line{
+        background-color: #25501a;
+        flex-direction: column;
+    }
+
+    .header-wrap{
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    #burger{
+        display: block;
+        color: yellow;
+        font-size: 35px;
+    }
+
+    .mobile-hide{
+        display: none;
+    }
+
+    #nav{
+        background-color: #97be64;
+        width: 100%;
+    }
+
+    #menu-links{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #home-content-mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #download-text{
+        font-size: 30px;    
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #display-game{
+        height: 40vh;
+    }
+
+    #game{
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .display-game-phone{
+        height: 40vh;
+    }
+
+    .explain-text{
+        font-size: 20px;
+    }
+
+    .img-txt{
+        margin-top: -2vh;
+    }
+
+    #contact{
+        padding: 30px 0 30px 20px;
+    }
+
+    .contact-text{
+        flex: 2;
+    }    
+
+    .download-badge{
+        width: 250px;
+    }
+
+    #home{
+        padding-bottom: 50px;
+    }
+
+}

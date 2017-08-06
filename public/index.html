@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calc Fast - Math game</title>
+        <meta name="description" content="Fun math game, where you need to think fast to solve math equations. Calc Fast is an Android game, that will present you with addition, subtraction, multiplication, and division. Try your best and make the highscore table.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="animations.css">
+        <script src="vue.js" defer></script>
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <div id="app">
+            <header id="top-line">
+                <div class="header-wrap">
+                    <a class="inline my-link-style" href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">
+                        <div class="center-content">
+                            <img class="app-icon inline" src="resources/images/ic_launcher.png" alt="Calc Fast icon" />
+                            <p class="inline header-text">Calc Fast</p>
+                        </div>
+                    </a>
+                    <div id="burger" v-on:click="showMenu()">
+                        &#9776;
+                    </div>
+                </div>
+                <nav id="nav" class="mobile-hide">
+                    <ul id="menu-links">
+                        <li v-on:click="scrollTo('#home')" class="active" data-link="home">Home</li>
+                        <li v-on:click="scrollTo('#game')" data-link="game">Game</li>
+                        <li v-on:click="scrollTo('#download')" data-link="download">Download</li>
+                        <li v-on:click="scrollTo('#contact')" data-link="contact">Contact</li>
+                    </ul>
+                </nav>
+            </header>        
+            <section id="home" class="green-gradient">
+
+                <div class="flex-col-2 center-content mobile-hide">
+                    <div class="wrap">
+                        <p id="download-text" class="pulse">Download today!</p>
+                        <a href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">
+                            <img class="download-badge" src="resources/images/google-play-badge.png" alt="Get it on Google Play"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-col-1 center-content mobile-hide">
+                    <img id="display-game" class="inline" src="resources/images/calcfastonphone.png" alt="Display of Calc Fast"/>
+                </div>
+
+                <div id="home-content-mobile">
+                    <p id="download-text" class="pulse">Download today!</p>
+                    <img id="display-game" class="inline" src="resources/images/calcfastonphone.png" alt="Display of Calc Fast"/>
+                    <a href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">
+                        <img class="download-badge" src="resources/images/google-play-badge.png" alt="Get it on Google Play"/>
+                    </a>
+                </div>
+
+                <div id="more" class="center-content my-link-style" v-on:click="scrollTo('#game')">
+                    <div class="wrap">
+                        <p class="my-font">Discover more</p>
+                        <img src="resources/images/ic_arrow_drop_down.png" alt="Show more"/>
+                    </div>
+                </div>
+
+            </section>
+            <section id="game">
+                <div class="flex-col-1 center-content">
+                    <img class="display-game-phone" class="inline" src="resources/images/framed_plus.png" alt="Display of Calc Fast"/>
+                </div>
+                <div class="flex-col-2 center-content">
+                    <div class="wrap">
+                        <p class="explain-text">Solve as many math calculations you can in 60 secons!</p>
+                        <ul>
+                            <li class="explain-text">Addision</li>
+                            <li class="explain-text">Subtraction</li>
+                            <li class="explain-text">Multiplication</li>
+                            <li class="explain-text">Division</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="game-learn">
+                <div class="flex-col-1 center-content">
+                    <img class="display-game-phone" class="inline" src="resources/images/framed_info.png" alt="Display of the result from one game"/>
+                </div>  
+                <div class="flex-col-1 center-content">
+                    <div class="wrap">
+                        <p class="explain-text">Learn from your mistakes and find out where you need to improve</p>
+                    </div>
+                </div>   
+                <div class="flex-col-1 center-content">
+                    <img class="display-game-phone" class="inline" src="resources/images/framed_stats.png" alt="Display of your stats in Calc Fast"/>
+                </div>            
+            </section>
+            <section id="game-improve">
+                <div class="flex-col-1 center-content">
+                    <div class="wrap">
+                        <p class="explain-text text-black">Improve yourself to answer the calculations correct and faster</p>
+                        <p class="explain-text text-black">Then join you might climb the leaderboard</p>
+                    </div>
+                </div>   
+                <div class="flex-col-1 center-content">
+                    <div class="wrap">
+                        <img class="display-game-phone" class="inline" src="resources/images/framed_leaderboard.png" alt="Leaderboard"/>
+                        <p class="img-txt">Public leaderboard</p>
+                    </div>
+                    <div class="wrap">
+                        <img class="display-game-phone" class="inline" src="resources/images/framed_highscores.png" alt="Highscore table"/>
+                        <p class="img-txt">Private highscoretable</p>
+                    </div>
+                </div>                        
+            </section>   
+            <section id="download">
+                <div class="flex-col-2 center-content">
+                    <div class="wrap">
+                        <a class="link-text" href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">Download at Google Play</a>
+                        </br>
+                        <a href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">
+                            <img class="download-badge" src="resources/images/google-play-badge.png" alt="Get it on Google Play"/>
+                        </a>
+                    </div>
+                </div>              
+            </section>
+            <section id="contact">
+                <div class="contact-text">
+                    <p class="my-font-black">Developer: Gaute Meek Olsen </p>
+                    <p class="my-font-black">Email: <a href="mailto:gautedevelopment@gmail.com">gautedevelopment@gmail.com</a></p>
+                </div>
+                <div class="contact-social">
+                    <a href="https://play.google.com/store/apps/developer?id=Gaute+Meek+Olsen" target="_blank">
+                        <div class="social-circle center-content"><img class="social-image" src="resources/images/play.png" alt="Google Play developer, Gaute Meek Olsen"/></div>
+                    </a>
+                    <a href="https://twitter.com/GauteMeekOlsen" target="_blank">
+                        <div class="social-circle center-content"><img class="social-image" src="resources/images/logo-twitter.svg" alt="Follow Gaute Meek Olsen on Twitter"/></div>
+                    </a>
+                </div>
+            </section>                   
+        </div>
+    </body>
+</html>
