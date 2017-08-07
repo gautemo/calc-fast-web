@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Calc Fast - Math game</title>
+        <title>Calc Fast - Math Game</title>
+        <link rel="icon" href="resources/images/ic_launcher.png">
         <meta name="description" content="Fun math game, where you need to think fast to solve math equations. Calc Fast is an Android game, that will present you with addition, subtraction, multiplication, and division. Try your best and make the highscore table.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="animations.css">
-        <script src="vue.js" defer></script>
+        <script src="vue.min.js" defer></script>
         <script src="main.js" defer></script>
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-104096302-1', 'auto');
+        ga('send', 'pageview');
+
+        </script>        
     </head>
     <body>
         <div id="app">
             <header id="top-line">
                 <div class="header-wrap">
-                    <a class="inline my-link-style" href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">
+                    <a class="inline my-link-style" v-on:click="sendEvent('link', 'Google Play App', 'header')" href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">
                         <div class="center-content">
                             <img class="app-icon inline" src="resources/images/ic_launcher.png" alt="Calc Fast icon" />
                             <p class="inline header-text">Calc Fast</p>
@@ -38,7 +49,7 @@
                 <div class="flex-col-2 center-content mobile-hide">
                     <div class="wrap">
                         <p id="download-text" class="pulse">Download today!</p>
-                        <a href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">
+                        <a v-on:click="sendEvent('link', 'Google Play App', 'Badge on home')" href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">
                             <img class="download-badge" src="resources/images/google-play-badge.png" alt="Get it on Google Play"/>
                         </a>
                     </div>
@@ -50,7 +61,7 @@
                 <div id="home-content-mobile">
                     <p id="download-text" class="pulse">Download today!</p>
                     <img id="display-game" class="inline" src="resources/images/calcfastonphone.png" alt="Display of Calc Fast"/>
-                    <a href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">
+                    <a v-on:click="sendEvent('link', 'Google Play App', 'Badge on home')" href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">
                         <img class="download-badge" src="resources/images/google-play-badge.png" alt="Get it on Google Play"/>
                     </a>
                 </div>
@@ -69,6 +80,7 @@
                 </div>
                 <div class="flex-col-2 center-content">
                     <div class="wrap">
+                        <p class="explain-text">Calc Fast is a quick and fun math game you can play on your Android phone.</p> 
                         <p class="explain-text">Solve as many math calculations you can in 60 secons!</p>
                         <ul>
                             <li class="explain-text">Addision</li>
@@ -113,9 +125,9 @@
             <section id="download">
                 <div class="flex-col-2 center-content">
                     <div class="wrap">
-                        <a class="link-text" href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">Download at Google Play</a>
+                        <a v-on:click="sendEvent('link', 'Google Play App', 'Link on download')" class="link-text" href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">Download at Google Play</a>
                         </br>
-                        <a href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">
+                        <a v-on:click="sendEvent('link', 'Google Play App', 'Badge on download')" href="https://play.google.com/store/apps/details?id=gautemo.game.calcfast" target="_blank">
                             <img class="download-badge" src="resources/images/google-play-badge.png" alt="Get it on Google Play"/>
                         </a>
                     </div>
@@ -124,13 +136,13 @@
             <section id="contact">
                 <div class="contact-text">
                     <p class="my-font-black">Developer: Gaute Meek Olsen </p>
-                    <p class="my-font-black">Email: <a href="mailto:gautedevelopment@gmail.com">gautedevelopment@gmail.com</a></p>
+                    <p class="my-font-black">Email: <a v-on:click="sendEvent('link', 'Email', 'contact')" href="mailto:gautedevelopment@gmail.com">gautedevelopment@gmail.com</a></p>
                 </div>
                 <div class="contact-social">
-                    <a href="https://play.google.com/store/apps/developer?id=Gaute+Meek+Olsen" target="_blank">
+                    <a v-on:click="sendEvent('link', 'Google Play developer', 'contact')" href="https://play.google.com/store/apps/developer?id=Gaute+Meek+Olsen" target="_blank">
                         <div class="social-circle center-content"><img class="social-image" src="resources/images/play.png" alt="Google Play developer, Gaute Meek Olsen"/></div>
                     </a>
-                    <a href="https://twitter.com/GauteMeekOlsen" target="_blank">
+                    <a v-on:click="sendEvent('link', 'Twitter', 'contact')" href="https://twitter.com/GauteMeekOlsen" target="_blank">
                         <div class="social-circle center-content"><img class="social-image" src="resources/images/logo-twitter.svg" alt="Follow Gaute Meek Olsen on Twitter"/></div>
                     </a>
                 </div>

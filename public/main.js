@@ -14,9 +14,16 @@ var app = new Vue({
             }else{
                 nav.classList.add('mobile-hide');
             }
+        },
+
+        sendEvent: function(category, action, label){
+            ga('send', 'event', category, action, label);
         }
     }
 });
+
+var scrollMidSent = false;
+var scrollBottomSent = false;
 
 window.onscroll = function(){
     scrollDetected()
@@ -37,6 +44,14 @@ function highlightMenu(scrollPos){
         menuItems[i].classList.remove('active');
         if(refElement.offsetTop < scrollPos + window.innerHeight){
             activeItem = menuItems[i];
+            if(i>0 && !scrollMidSent){
+                ga('send', 'event', 'pageview', 'scroll', 'mid');
+                scrollMidSent = true;
+            }
+            if(i+1 === menuItems.length && !scrollBottomSent){
+                ga('send', 'event', 'pageview', 'scroll', 'bottom');
+                scrollBottomSent = true;
+            }            
         }
     }
     activeItem.classList.add('active');
