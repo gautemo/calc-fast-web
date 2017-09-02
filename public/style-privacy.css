@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('resources/playtime.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+body{
+    margin: 0;
+}
+
+#app{
+    position: relative;
+    min-height: 100vh;
+}
+
+#top-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-sizing: border-box;
+    z-index: 99;
+    background-color: #25501a;
+}
+
+.header-wrap{
+    padding: 10px 0 10px 20px;
+}
+
+.app-icon{
+    width: 50px;
+    height: 50px;
+}
+
+.inline{
+    display: inline-block;
+}
+
+.header-text{
+    font-size: 30px;
+    font-family: 'MyWebFont';
+    color: yellow;
+    margin: 0 0 0 10px;
+}
+
+.center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-link-style{
+    text-decoration: none;
+}
+
+#privacy{
+    padding-top: 70px;
+}
+
+.text-content{
+    width: 40%;
+    margin-bottom: 200px;
+    margin-top: 25px;
+}
+
+#contact{
+    background-color: #50D6C1;/*#29b21c;*/
+    padding: 30px 0 30px 50px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.contact-text{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-social{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;    
+}
+
+.social-image{
+    width: 35px;
+    height: 35px;
+}
+
+.social-circle{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.my-font-black{
+    font-family: 'MyWebFont';
+    color: black; 
+    margin: 0;    
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #contact{
+        padding: 30px 0 30px 20px;
+    }
+
+    .contact-text{
+        flex: 2;
+    }    
+
+    .text-content{
+        width: 70%;
+        margin-bottom: 170px;
+        margin-top: 15px;
+    }
+
+}

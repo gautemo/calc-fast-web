@@ -150,13 +150,13 @@ body{
 }
 
 #game-learn{
-    background-color: #3eeb96;/*#7baabe;*//*palevioletred;*/ /*plum*/
+    background-color: #63D64C;/* #3eeb96;*//*#7baabe;*//*palevioletred;*/ /*plum*/
     padding: 10px 0 10px 0; 
     display: flex;
 }
 
 #game-improve{
-    background-color: #acf35a;/*orange;*/
+    background-color: #A6CC28;/*#acf35a;*//*orange;*/
     padding: 10px 0 10px 0; 
     display: flex;
 }
@@ -168,7 +168,7 @@ body{
 }
 
 #contact{
-    background-color: #29b21c;
+    background-color: #50D6C1;/*#29b21c;*/
     padding: 30px 0 30px 50px;
     display: flex;
 }
