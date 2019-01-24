@@ -83,12 +83,13 @@ body{
 }
 
 #display-game{
-    height: 85vh;
+    height: 75vh;
     transform: rotate(1deg);
 }
 
 .display-game-phone{
-    height: 75vh;
+    height: 65vh;
+    padding: 50px 0;
 }
 
 .flex-col-2{
