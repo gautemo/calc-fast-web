@@ -1,13 +1,14 @@
 @font-face {
-  font-family: 'MyWebFont';
-  src: url('resources/playtime.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}  
+    font-family: 'MyWebFont';
+    src: url('resources/playtime.ttf') format('truetype');
+    /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
 
-body{
+body {
     margin: 0;
 }
 
-#top-line{
+#top-line {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,103 +19,103 @@ body{
     z-index: 99;
 }
 
-.header-wrap{
+.header-wrap {
     padding: 10px 0 10px 20px;
 }
 
-.app-icon{
+.app-icon {
     width: 50px;
     height: 50px;
 }
 
-.inline{
+.inline {
     display: inline-block;
 }
 
-.header-text{
+.header-text {
     font-size: 30px;
     font-family: 'MyWebFont';
     color: yellow;
     margin: 0 0 0 10px;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.center-content{
+.center-content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#home{
+#home {
     height: 100vh;
     width: 100%;
     display: flex;
 }
 
-#test{
+#test {
     height: 110vh;
     width: 100%;
 }
 
-#menu-links{
+#menu-links {
     padding-right: 20px;
 }
 
-#menu-links li{
+#menu-links li {
     margin: 0 10px 0 10px;
     list-style: none;
     display: inline;
     text-decoration: none;
     font-size: 18px;
     font-family: 'MyWebFont';
-    color: yellow;   
-    cursor: pointer;  
+    color: yellow;
+    cursor: pointer;
 }
 
-#menu-links li.active{
+#menu-links li.active {
     text-decoration: underline;
 }
 
-.my-link-style{
+.my-link-style {
     text-decoration: none;
 }
 
-#display-game{
+#display-game {
     height: 75vh;
     transform: rotate(1deg);
 }
 
-.display-game-phone{
+.display-game-phone {
     height: 65vh;
     padding: 50px 0;
 }
 
-.flex-col-2{
+.flex-col-2 {
     flex: 2;
 }
 
-.flex-col-1{
+.flex-col-1 {
     flex: 1;
 }
 
-#download-text{
+#download-text {
     font-size: 60px;
     font-family: 'MyWebFont';
-    color: yellow;        
+    color: yellow;
 }
 
-.download-badge{
+.download-badge {
     width: 300px;
 }
 
-.wrap{
+.wrap {
     text-align: center;
 }
 
-#more{
+#more {
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -122,89 +123,104 @@ body{
     cursor: pointer;
 }
 
-.my-font{
+.my-font {
     font-family: 'MyWebFont';
-    color: yellow;     
-    margin: 0;  
+    color: yellow;
+    margin: 0;
     font-size: 17px;
 }
 
-.my-font-black{
+.my-font-black {
     font-family: 'MyWebFont';
-    color: black; 
-    margin: 0;    
+    color: black;
+    margin: 0;
     font-size: 17px;
 }
 
-.green-gradient{
-  background: green; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, green, #497959); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, green, #497959); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, green, #497959); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, green, #497959); /* Standard syntax */    
+.green-gradient {
+    background: green;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, green, #497959);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, green, #497959);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, green, #497959);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, green, #497959);
+    /* Standard syntax */
 }
 
-#game{
-    background-color: #0bbf4b;/*#4bbfc3;*//*#0b5f9f;*/ /*242c40*/
-    padding: 10px 0 10px 0; 
+#game {
+    background-color: #0bbf4b;
+    /*#4bbfc3;*/
+    /*#0b5f9f;*/
+    /*242c40*/
+    padding: 10px 0 10px 0;
     display: flex;
 }
 
-#game-learn{
-    background-color: #63D64C;/* #3eeb96;*//*#7baabe;*//*palevioletred;*/ /*plum*/
-    padding: 10px 0 10px 0; 
+#game-learn {
+    background-color: #63D64C;
+    /* #3eeb96;*/
+    /*#7baabe;*/
+    /*palevioletred;*/
+    /*plum*/
+    padding: 10px 0 10px 0;
     display: flex;
 }
 
-#game-improve{
-    background-color: #A6CC28;/*#acf35a;*//*orange;*/
-    padding: 10px 0 10px 0; 
+#game-improve {
+    background-color: #A6CC28;
+    /*#acf35a;*/
+    /*orange;*/
+    padding: 10px 0 10px 0;
     display: flex;
 }
 
-#download{
+#download {
     background-color: whitesmoke;
-    padding: 10px 0 10px 0; 
-    display: flex;    
+    padding: 10px 0 10px 0;
+    display: flex;
 }
 
-#contact{
-    background-color: #50D6C1;/*#29b21c;*/
+#contact {
+    background-color: #50D6C1;
+    /*#29b21c;*/
     padding: 30px 0 30px 50px;
     display: flex;
 }
 
-.explain-text{
+.explain-text {
     font-family: 'MyWebFont';
-    color: yellow;     
-    margin: 0;  
+    color: yellow;
+    margin: 0;
     font-size: 30px;
 }
 
-.text-white{
-    color: whitesmoke;     
+.text-white {
+    color: whitesmoke;
 }
 
-.text-black{
-    color: black;     
+.text-black {
+    color: black;
 }
 
-li.explain-text{
+li.explain-text {
     text-align: left;
     margin-left: 50px;
 }
 
-.link-text{
+.link-text {
     font-family: 'MyWebFont';
     font-size: 20px;
 }
 
-.social-image{
+.social-image {
     width: 35px;
     height: 35px;
 }
 
-.social-circle{
+.social-circle {
     width: 60px;
     height: 60px;
     margin: 5px;
@@ -212,44 +228,44 @@ li.explain-text{
     border-radius: 30px;
 }
 
-.contact-text{
+.contact-text {
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: center;
 }
 
-.contact-social{
+.contact-social {
     display: flex;
     flex: 1;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
-.img-txt{
+.img-txt {
     margin-top: -5vh;
     font-family: 'MyWebFont';
-    color: black;  
+    color: black;
     font-size: 18px;
 }
 
-#burger{
+#burger {
     display: none;
     color: yellow;
     font-size: 35px;
 }
 
-#home-content-mobile{
+#home-content-mobile {
     display: none;
 }
 
 @media only screen and (max-width: 768px) {
-    #top-line{
+    #top-line {
         background-color: #25501a;
         flex-direction: column;
     }
 
-    .header-wrap{
+    .header-wrap {
         display: flex;
         width: 95%;
         justify-content: space-between;
@@ -257,29 +273,29 @@ li.explain-text{
         padding-left: 0;
     }
 
-    #burger{
+    #burger {
         display: block;
         color: yellow;
         font-size: 35px;
     }
 
-    .mobile-hide{
+    .mobile-hide {
         display: none;
     }
 
-    #nav{
+    #nav {
         background-color: #97be64;
         width: 100%;
     }
 
-    #menu-links{
+    #menu-links {
         display: flex;
         justify-content: center;
         padding-left: 0;
         padding-right: 0;
     }
 
-    #home-content-mobile{
+    #home-content-mobile {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -287,48 +303,54 @@ li.explain-text{
         width: 100%;
     }
 
-    #download-text{
-        font-size: 30px;    
+    #download-text {
+        font-size: 30px;
         margin-top: 5px;
         margin-bottom: 5px;
     }
 
-    #display-game{
+    #display-game {
         height: 40vh;
     }
 
-    #game{
+    #game {
         flex-direction: column;
         padding-left: 15px;
         padding-right: 15px;
     }
 
-    .display-game-phone{
+    .display-game-phone {
         height: 40vh;
     }
 
-    .explain-text{
+    .explain-text {
         font-size: 20px;
     }
 
-    .img-txt{
+    .img-txt {
         margin-top: -2vh;
     }
 
-    #contact{
+    #contact {
         padding: 30px 0 30px 20px;
     }
 
-    .contact-text{
+    .contact-text {
         flex: 2;
-    }    
+    }
 
-    .download-badge{
+    .download-badge {
         width: 250px;
     }
 
-    #home{
+    #home {
         padding-bottom: 50px;
     }
 
+}
+
+#aod {
+    background: #2bca60;
+    padding: 10px 0 10px 0;
+    display: flex;
 }
